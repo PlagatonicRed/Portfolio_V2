@@ -4,7 +4,7 @@ export const projects = [
     id: 1,
     title: "General Motors: EV Charger Dashboard",
     description: "An internal dashboard that centralizes EV charger data, providing teams with a unified view of charger status, performance, and operational insights.",
-    image: "/images/projects/GM.webp",
+    image: "/images/projects/gm.webp",
     link: "/projects/ChargerDashboard"
   },
   {

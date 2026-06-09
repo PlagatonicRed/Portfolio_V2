@@ -87,6 +87,8 @@ const projectData = {
 };
 
 export default function ProjectTemplate() {
+  const srcPrefix = process.env.NODE_ENV === 'production' ? '/Portfolio_V2' : '';
+
   return (
     <main className="max-w-4xl mx-auto px-6 py-20">
       
@@ -138,7 +140,7 @@ export default function ProjectTemplate() {
       {/* Hero Showcase Image - Now auto-scales to its exact aspect ratio safely */}
       <div className="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-sm overflow-hidden mb-20">
         <Image 
-          src={projectData.heroImage.src} 
+          src={`${srcPrefix}${projectData.heroImage.src}`} 
           alt={projectData.heroImage.alt}
           width={projectData.heroImage.width}
           height={projectData.heroImage.height}
@@ -169,7 +171,7 @@ export default function ProjectTemplate() {
                   {/* Container uses native content dimensions rather than enforcing aspect-video boxes */}
                   <div className="w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-900 rounded-sm overflow-hidden group-hover:border-accent transition-all duration-300">
                     <Image 
-                      src={block.image.src} 
+                      src={'${srcPrefix}${block.image.src}'} 
                       alt={block.image.alt}
                       width={block.image.width}
                       height={block.image.height}

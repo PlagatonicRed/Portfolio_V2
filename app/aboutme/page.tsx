@@ -29,6 +29,8 @@ export default function AboutMe() {
       .filter((skill): skill is typeof skills[number] => skill !== null);
   }, [searchQuery]);
 
+  const srcPrefix = process.env.NODE_ENV === 'production' ? '/Portfolio_V2' : '';
+
   return (
     <main className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -37,7 +39,7 @@ export default function AboutMe() {
         <div className="lg:col-span-5 lg:sticky lg:top-32 w-full max-w-md mx-auto lg:max-w-none">
           <div className="relative aspect-[4/5] sm:aspect-[3/4] bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-sm overflow-hidden group hover:border-accent transition-all duration-300">
             <Image 
-              src="/images/projects/Ian.jpg" 
+              src={`${srcPrefix}/images/projects/Ian.jpg`}
               alt="Ian Lampley portrait"
               fill
               className="object-cover grayscale contrast-110 dark:contrast-125 opacity-90 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
