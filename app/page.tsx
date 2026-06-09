@@ -28,10 +28,9 @@ export default function Home() {
                   
                   <div 
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 
-                              dark:bg-gradient-to-t dark:from-[rgba(229,46,46,0.35)] dark:to-[rgba(229,46,46,0)]
-                              bg-gradient-to-t from-[rgba(30,96,196,0.22)] to-[rgba(30,96,196,0)]"
+                              bg-gradient-to-t from-gradient-start to-gradient-mid"
                   />
-
+                                    
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 z-20">
                     <h4 className="text-4xl font-black tracking-tighter uppercase text-center px-4 text-foreground group-hover:text-accent transition-colors duration-300">
                       {project.title}
