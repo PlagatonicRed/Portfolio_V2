@@ -15,13 +15,13 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center border-b border-zinc-200/60 dark:border-zinc-900/50 pb-20 last:border-0">
                 
                 {/* Project Interface Viewport Frame */}
-                <div className="md:col-span-8 relative aspect-video bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-sm transition-all group-hover:border-[var(--accent)]">
+                <div className="md:col-span-8 relative aspect-video bg-[var(card-bg)] border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-sm transition-all group-hover:border-[var(--accent)]">
                   {project.image && (
                     <Image 
                       src={`${srcPrefix}${project.image}`}
                       alt={project.title}
                       fill
-                      className="object-cover opacity-100 group-hover:opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:blur-[2px]" 
+                      className="object-cover opacity-100 group-hover:opacity-30 transition-all duration-500 group-hover:scale-105 group-hover:blur-[2px]" 
                       sizes="(max-width: 768px) 100vw, 66vw"
                     />
                   )}
