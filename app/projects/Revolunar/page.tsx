@@ -140,7 +140,7 @@ export default function ProjectTemplate() {
                 >
                   <div className="relative aspect-video w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-900 rounded-sm overflow-hidden group-hover:border-accent transition-all duration-300">
                     <Image 
-                      src={'${srcPrefix}${block.image.src}'} 
+                      src={`${srcPrefix}${block.image.src}`} 
                       alt={block.image.alt}
                       fill
                       className="object-cover"
