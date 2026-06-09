@@ -10,8 +10,8 @@
   --accent: #0066ff;
   --accent-hover: #13428b;
   
-  --gradient-start: rgba(30, 96, 196, 0.22); 
-  --gradient-mid: rgba(30, 96, 196, 0.001); 
+  --gradient-start: rgba(30, 96, 196, 0.274); 
+  --gradient-mid: rgba(255, 255, 255, 0.219); 
 }
 
 .dark {
@@ -24,8 +24,8 @@
   --accent: #e52e2e;
   --accent-hover: #b11e1e;
   
-  --gradient-start: rgba(229, 46, 46, 0.35);  
-  --gradient-mid: rgba(229, 46, 46, 0.0);    
+  --gradient-start: rgba(229, 46, 46, 0.26);  
+  --gradient-mid: rgba(255, 255, 255, 0.219);    
 }
 
 @theme inline {

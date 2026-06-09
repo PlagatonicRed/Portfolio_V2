@@ -21,7 +21,7 @@ export default function Home() {
                       src={`${srcPrefix}${project.image}`}
                       alt={project.title}
                       fill
-                      className="object-cover opacity-100 group-hover:opacity-40 transition-all duration-500 group-hover:scale-105" 
+                      className="object-cover opacity-100 group-hover:opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:blur-[2px]" 
                       sizes="(max-width: 768px) 100vw, 66vw"
                     />
                   )}
