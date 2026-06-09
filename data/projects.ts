@@ -18,7 +18,7 @@ export const projects = [
     id: 3,
     title: "Iron Galaxy Studios: Revolunar",
     description: "A Gothic Western rogue-like FPS featuring complex bullet-crafting behaviors and dynamic encounter systems.",
-    image: "/images/projects/FinalIGS_Logo.png",
+    image: "/images/projects/FinalIGS_Logo_V2.png",
     link: "projects/Revolunar"
   },
   {

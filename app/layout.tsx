@@ -25,26 +25,46 @@ export default function RootLayout({
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsShrunk(true);
-      } else {
-        setIsShrunk(false);
-      }
+      setIsShrunk(window.scrollY > 20);
     };
 
-    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setIsDarkMode(systemPrefersDark);
+    // Safely look up what state the inline head script initialized on the DOM
+    const hasDarkClass = document.documentElement.classList.contains("dark");
+    setIsDarkMode(hasDarkClass);
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
+    if (isDarkMode) {
+      document.documentElement.classList.remove("dark");
+      setIsDarkMode(false);
+    } else {
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
+    }
   };
 
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${isDarkMode ? "dark" : ""}`}>
+    // Keep html classes clean; state mutations are handled dynamically via our toggle pipeline
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        {/* Blazing fast injection script prevents light/dark flashing on page loads */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
       <body className="antialiased font-sans">
 
         <header 
@@ -90,11 +110,13 @@ export default function RootLayout({
                   </Link>
                 </li>
               </ul>
-
-              {/* Increased padding + offset margin to produce an optimized mobile tap target footprint */}
+              
               <button 
                 onClick={toggleTheme}
-                className="p-3 -m-1 rounded-md border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900 hover:text-[var(--accent-hover)] hover:border-zinc-300 dark:hover:border-zinc-700 text-[var(--muted-text)] transition-all duration-200"
+                className="p-3 -m-1 rounded-md border text-[var(--muted-text)] transition-all duration-200
+                  bg-[var(--background)] border-zinc-300 hover:border-zinc-400 hover:bg-zinc-200/30
+                  dark:bg-[var(--background)] dark:border-zinc-800 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40
+                  hover:text-[var(--accent-hover)]"
                 aria-label="Toggle Theme"
               >
                 {isDarkMode ? (

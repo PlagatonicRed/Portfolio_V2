@@ -118,12 +118,14 @@ export default function AboutMe() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Filter skills (e.g., DX11, RBAC)..."
-                  className="w-full px-3 py-1.5 text-xs rounded-sm bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-900 text-foreground placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/20 transition-all duration-300 font-light"
+                  className="w-full px-3 py-1.5 text-xs rounded-sm text-foreground focus:outline-none transition-all duration-300 font-light
+                    bg-[var(--card-bg)] border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-600
+                    focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/10"
                 />
                 {searchQuery && (
                   <button
                     onClick={() => setSearchQuery('')}
-                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-600 hover:text-accent text-xs transition-colors"
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500 hover:text-accent text-xs transition-colors"
                   >
                     ✕
                   </button>
@@ -143,7 +145,8 @@ export default function AboutMe() {
                       {skill.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-2.5 py-1 text-xs font-light text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-950/40 border border-zinc-200/60 dark:border-zinc-900 rounded-sm hover:border-accent/40 dark:hover:border-accent/30 hover:text-foreground transition-all duration-200"
+                          className="px-2.5 py-1 text-xs font-light text-zinc-700 dark:text-zinc-300 rounded-sm transition-all duration-200
+                            bg-[var(--card-bg)] border border-zinc-200/80 dark:border-zinc-700/80 hover:border-accent/50 dark:hover:border-accent/40 hover:text-foreground"
                         >
                           {tech}
                         </span>

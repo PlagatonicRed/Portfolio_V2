@@ -5,6 +5,8 @@
   --foreground: #121824;
   --muted-text: #5c697d;
   
+  --card-bg: #ffffff; 
+  
   --accent: #1e60c4;
   --accent-hover: #13428b;
   
@@ -16,6 +18,8 @@
   --background: #131313;
   --foreground: #e4e4e7;
   --muted-text: #8b8b93;
+  
+  --card-bg: #929292; 
   
   --accent: #e52e2e;
   --accent-hover: #b11e1e;
@@ -38,6 +42,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-  color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-  border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+              color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }

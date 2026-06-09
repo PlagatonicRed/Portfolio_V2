@@ -29,8 +29,8 @@ export default function Contact() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {/* Phone */}
-          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
-            <span className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 z-10 pointer-events-none">
+          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-[var(--card-bg)] rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
+            <span className="text-xs uppercase tracking-widest text-foreground opacity-60 mb-2 z-10 pointer-events-none">
               Phone
             </span>
 
@@ -38,7 +38,7 @@ export default function Contact() {
               +1 (248) 949-5090
             </span>
 
-            <span className="text-xs text-zinc-400 mt-2 z-10 pointer-events-none">
+            <span className="text-xs text-foreground opacity-60  mt-2 z-10 pointer-events-none">
               Call or Text
             </span>
 
@@ -50,8 +50,8 @@ export default function Contact() {
           </div>
 
           {/* Email */}
-          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
-            <span className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 z-10 pointer-events-none">
+          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-[var(--card-bg)] rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
+            <span className="text-xs uppercase tracking-widest text-foreground opacity-60 mb-2 z-10 pointer-events-none">
               Email
             </span>
 
@@ -59,7 +59,7 @@ export default function Contact() {
               IanLampley@gmail.com
             </span>
 
-            <span className="text-xs text-zinc-400 mt-2 z-10 pointer-events-none">
+            <span className="text-xs text-foreground opacity-60 mt-2 z-10 pointer-events-none">
               Preferred Contact Method
             </span>
 
@@ -71,8 +71,8 @@ export default function Contact() {
           </div>
 
           {/* LinkedIn */}
-          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
-            <span className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 z-10 pointer-events-none">
+          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-[var(--card-bg)] rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
+            <span className="text-xs uppercase tracking-widest text-foreground opacity-60 mb-2 z-10 pointer-events-none">
               LinkedIn
             </span>
 
@@ -80,7 +80,7 @@ export default function Contact() {
               Connect Professionally
             </span>
 
-            <span className="text-xs text-zinc-400 mt-2 z-10 pointer-events-none">
+            <span className="text-xs text-foreground opacity-60 mt-2 z-10 pointer-events-none">
               Career & Experience
             </span>
 
@@ -94,8 +94,8 @@ export default function Contact() {
           </div>
 
           {/* GitHub */}
-          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
-            <span className="text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 z-10 pointer-events-none">
+          <div className="group relative flex flex-col items-center justify-center p-6 border border-zinc-200/60 dark:border-zinc-800/60 bg-[var(--card-bg)] rounded-sm hover:border-accent hover:bg-accent/5 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[140px]">
+            <span className="text-xs uppercase tracking-widest text-foreground opacity-60 mb-2 z-10 pointer-events-none">
               GitHub
             </span>
 
@@ -103,7 +103,7 @@ export default function Contact() {
               View Source Code
             </span>
 
-            <span className="text-xs text-zinc-400 mt-2 z-10 pointer-events-none">
+            <span className="text-xs text-foreground opacity-60 mt-2 z-10 pointer-events-none">
               Projects & Experiments
             </span>
 
