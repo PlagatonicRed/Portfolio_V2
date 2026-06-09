@@ -17,14 +17,14 @@ export const projects = [
   {
     id: 3,
     title: "Iron Galaxy Studios: Revolunar",
-    description: "A rogue-like FPS set in the wild west.",
+    description: "A Gothic Western rogue-like FPS featuring complex bullet-crafting behaviors and dynamic encounter systems.",
     image: "/images/projects/FinalIGS_Logo.png",
     link: "projects/Revolunar"
   },
   {
     id: 4,
     title: "Windows Window Shader",
-    description: "A program to apply shaders to windows windows for funsies",
+    description: "Desktop effects framework utilizing Windows Graphics Capture and free-threaded DirectX 11 pipelines.",
     image: "/images/projects/WWS_V3.png",
     link: "projects/WWS"
   },

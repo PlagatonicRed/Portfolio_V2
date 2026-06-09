@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const projectData = {
   title: "Windows Window Shader Engine",
-  subtitle: "An advanced desktop optimization and effects framework utilizing Windows Graphics Capture and free-threaded DirectX 11 pipelines.",
+  subtitle: "A desktop effects framework utilizing Windows Graphics Capture and free-threaded DirectX 11 pipelines.",
   meta: [
     { label: "Role", value: "Core Graphics Developer" },
     { label: "Timeline", value: "2 Weeks (June 2026)" },
