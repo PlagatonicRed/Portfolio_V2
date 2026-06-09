@@ -18,7 +18,7 @@ const projectData = {
     "Full-stack state management and telemetry mapping across containerized Next.js/FastAPI environments."
   ],
   heroImage: {
-    src: "/images/projects/GM.webp", 
+    src: "/images/projects/gm.webp", 
     alt: "General Motors on-campus EV charging station lot overview map"
   },
   

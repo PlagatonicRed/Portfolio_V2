@@ -9,12 +9,17 @@
   
   --accent: #1e60c4;
   --accent-hover: #13428b;
-  
+  --accent-rgb: 30, 96, 196; 
+  --gradient-start: rgb(var(--accent-rgb) / 0.22);
+  --gradient-mid: rgb(var(--accent-rgb) / 0.0);
   --gradient-start: rgba(30, 96, 196, 0.22); 
   --gradient-mid: rgba(30, 96, 196, 0.0);   
 }
 
 .dark {
+  --accent-rgb: 229, 46, 46;
+  --gradient-start: rgb(var(--accent-rgb) / 0.35);
+  --gradient-mid: rgb(var(--accent-rgb) / 0.0);
   --background: #131313;
   --foreground: #e4e4e7;
   --muted-text: #8b8b93;
