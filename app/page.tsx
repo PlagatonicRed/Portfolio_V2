@@ -4,6 +4,7 @@ import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export default function Home() {
+  const srcPrefix = process.env.NODE_ENV === 'production' ? '/Portfolio_V2' : '';
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
       <div className="flex flex-col gap-24">
@@ -17,7 +18,7 @@ export default function Home() {
                 <div className="md:col-span-8 relative aspect-video bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-sm transition-all group-hover:border-[var(--accent)]">
                   {project.image && (
                     <Image 
-                      src={project.image} 
+                      src={`${srcPrefix}${project.image}`}
                       alt={project.title}
                       fill
                       className="object-cover opacity-100 group-hover:opacity-40 transition-all duration-500 group-hover:scale-105" 
